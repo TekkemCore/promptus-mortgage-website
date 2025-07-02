@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promptus Mortgage Group | Your South Florida Home Loan Experts</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Lato:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'sans': ['Lato', 'sans-serif'],
+                        'display': ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'brand-blue': '#0D3D56',
+                        'brand-teal': '#18A2B8',
+                        'brand-sand': '#F0EAD6',
+                        'brand-gold': '#D4AF37',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Small CSS additions for smooth experience */
+        .hero-bg {
+            background-image: linear-gradient(to right, rgba(13, 61, 86, 0.9), rgba(13, 61, 86, 0.7)), url('https://images.pexels.com/photos/209296/pexels-photo-209296.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 font-sans antialiased">
+
+    <!-- Header -->
+    <header id="header" class="bg-white shadow-md fixed w-full z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <nav class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="#" class="text-2xl font-display font-bold text-brand-teal">
+                    Promptus Mortgage Group
+                </a>
+
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex items-center space-x-8">
+                    <li><a href="#services"
+                            class="text-gray-600 hover:text-brand-teal font-medium transition-colors">Services</a></li>
+                    <li><a href="#about" class="text-gray-600 hover:text-brand-teal font-medium transition-colors">About
+                            Us</a></li>
+                    <li><a href="#contact"
+                            class="text-gray-600 hover:text-brand-teal font-medium transition-colors">Contact</a></li>
+                </ul>
+
+                <!-- CTA Button -->
+                <a href="tel:954-804-7328"
+                    class="hidden md:flex items-center space-x-2 bg-brand-teal text-white px-5 py-2.5 rounded-lg font-bold hover:bg-opacity-90 transition-transform hover:scale-105">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                        </path>
+                    </svg>
+                    <span>(954) 804-7328</span>
+                </a>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-brand-blue focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+            </nav>
+
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4">
+                <ul class="flex flex-col space-y-4">
+                    <li><a href="#services"
+                            class="block text-gray-600 hover:text-brand-teal font-medium transition-colors">Services</a>
+                    </li>
+                    <li><a href="#about"
+                            class="block text-gray-600 hover:text-brand-teal font-medium transition-colors">About Us</a>
+                    </li>
+                    <li><a href="#contact"
+                            class="block text-gray-600 hover:text-brand-teal font-medium transition-colors">Contact</a>
+                    </li>
+                    <li>
+                        <a href="tel:954-804-7328"
+                            class="flex items-center space-x-2 bg-brand-teal text-white px-5 py-2.5 rounded-lg font-bold hover:bg-opacity-90 transition-transform hover:scale-105 w-full justify-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                </path>
+                            </svg>
+                            <span>(954) 804-7328</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg pt-32 pb-20 md:pt-48 md:pb-32">
+            <div class="container mx-auto px-6 text-center text-white">
+                <h1 class="text-4xl md:text-6xl font-display font-bold mb-4 leading-tight">Your Key to South Florida
+                    Homeownership</h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 text-brand-sand">Navigating your path to a new home
+                    with expert mortgage, refinance, and reverse mortgage solutions.</p>
+                <a href="#contact"
+                    class="bg-brand-gold text-brand-blue font-bold font-display text-lg px-8 py-4 rounded-lg hover:bg-opacity-90 transition-transform hover:scale-105 inline-block">
+                    Start Your Free Consultation
+                </a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-display font-bold text-brand-blue">Our Mortgage Services</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">We provide tailored solutions to meet your
+                        specific home financing needs.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1: Home Purchase -->
+                    <div
+                        class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <div
+                            class="flex items-center justify-center h-16 w-16 bg-brand-teal rounded-full text-white mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-display font-bold text-brand-blue mb-4">Home Purchase Loans</h3>
+                        <p class="text-gray-600">Dreaming of a new home? We guide first-time buyers and seasoned
+                            homeowners alike through a seamless purchase process with competitive rates.</p>
+                    </div>
+
+                    <!-- Service Card 2: Refinance -->
+                    <div
+                        class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <div
+                            class="flex items-center justify-center h-16 w-16 bg-brand-teal rounded-full text-white mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="23 4 23 10 17 10"></polyline>
+                                <polyline points="1 20 1 14 7 14"></polyline>
+                                <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-display font-bold text-brand-blue mb-4">Mortgage Refinance</h3>
+                        <p class="text-gray-600">Optimize your finances. We can help you lower your monthly payments,
+                            reduce your loan term, or cash out equity for other goals.</p>
+                    </div>
+
+                    <!-- Service Card 3: Reverse Mortgage -->
+                    <div
+                        class="bg-gray-50 p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:-translate-y-2">
+                        <div
+                            class="flex items-center justify-center h-16 w-16 bg-brand-teal rounded-full text-white mb-6">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z">
+                                </path>
+                                <path d="m10 8 4 4-4 4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-display font-bold text-brand-blue mb-4">Reverse Mortgage</h3>
+                        <p class="text-gray-600">For homeowners 62+, unlock the equity in your home. Our specialists
+                            provide clear, compassionate guidance on this powerful financial tool.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20 bg-brand-sand">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/3">
+                        <img src="https://images.pexels.com/photos/8867433/pexels-photo-8867433.jpeg?auto=compress&cs=tinysrgb&w=600"
+                            alt="Thomas George, Lead Mortgage Specialist"
+                            class="rounded-lg shadow-2xl w-full h-auto object-cover"
+                            onerror="this.onerror=null;this.src='https://placehold.co/600x600/0D3D56/FFFFFF?text=Thomas+George';">
+                    </div>
+                    <div class="md:w-2/3">
+                        <h2 class="text-4xl font-display font-bold text-brand-blue mb-4">Your Local South Florida Expert
+                        </h2>
+                        <h3 class="text-2xl font-display font-semibold text-brand-teal mb-4">Thomas George, Lead
+                            Mortgage Specialist (NMLS ID 1967262)</h3>
+                        <p class="text-gray-700 mb-4 text-lg">
+                            With over a decade of experience in the South Florida real estate market, Thomas George is
+                            the heart of Promptus Mortgage Group. He's not just a loan officer; he's your neighbor and trusted
+                            advisor, committed to providing transparent, personalized service. Thomas's deep
+                            understanding of our unique market ensures you get the best possible guidance and loan for
+                            your situation.
+                        </p>
+                        <p class="text-gray-600">
+                            "My goal is simple: to make your homeownership dreams a reality with a process that's as
+                            smooth and stress-free as a Florida breeze. Let's build your future, together."
+                        </p>
+                        <div class="mt-6 pt-6 border-t border-brand-blue/20">
+                            <p class="text-gray-800 font-semibold">
+                                Contact Thomas directly:
+                                <a href="mailto:thomas@promptusmortgage.com"
+                                    class="text-brand-teal hover:underline">thomas@promptusmortgage.com</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-display font-bold text-brand-blue">Ready to Get Started?</h2>
+                    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">Reach out today for a no-obligation
+                        consultation. We're here to answer your questions.</p>
+                </div>
+                <div class="bg-gray-50 rounded-lg shadow-xl p-8 md:p-12 max-w-5xl mx-auto">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                        <!-- Contact Info -->
+                        <div class="space-y-6">
+                            <h3 class="text-2xl font-display font-bold text-brand-blue">Contact Information</h3>
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0 pt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" class="text-brand-teal" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-800">Phone</p>
+                                    <a href="tel:954-804-7328" class="text-lg text-brand-teal hover:underline">(954)
+                                        804-7328</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0 pt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" class="text-brand-teal" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path
+                                            d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                        </path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-800">General Inquiries</p>
+                                    <a href="mailto:info@promptusmortgage.com"
+                                        class="text-lg text-brand-teal hover:underline">info@promptusmortgage.com</a>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-4">
+                                <div class="flex-shrink-0 pt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" class="text-brand-teal" stroke-width="2"
+                                        stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-gray-800">Location</p>
+                                    <p class="text-lg text-gray-600">Proudly serving all of South Florida</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Form -->
+                        <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+                            <div>
+                                <input type="hidden" name="access_key" value="86825626-d1bf-4fef-b7d0-e210cf6e56d2">
+                                <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                                <input type="text" id="name" name="name" required
+                                    class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-brand-teal focus:border-brand-teal">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                                <input type="email" id="email" name="email" required
+                                    class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-brand-teal focus:border-brand-teal">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-sm font-medium text-gray-700">How can we
+                                    help?</label>
+                                <textarea id="message" name="message" rows="4" required
+                                    class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-brand-teal focus:border-brand-teal"></textarea>
+                            </div>
+                            <div>
+                                <!-- Honeypot Spam Protection -->
+                                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                                <button type="submit"
+                                    class="w-full bg-brand-gold text-brand-blue font-bold font-display px-6 py-3 rounded-lg hover:bg-opacity-90 transition-all transform hover:scale-102">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brand-blue text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p class="font-display font-bold text-lg mb-2">Promptus Mortgage Group</p>
+            <p class="text-brand-sand">&copy; <span id="year"></span> Promptus Mortgage Group, LLC. All Rights Reserved.</p>
+            <p class="text-sm text-gray-400 mt-2">NMLS ID 2726442 | Equal Housing Lender</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu and Year -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Mobile Menu Toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenuButton.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // Close mobile menu when a link is clicked
+            document.querySelectorAll('#mobile-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+
+            // Set current year in footer
+            document.getElementById('year').textContent = new Date().getFullYear();
+
+            // Header scroll effect
+            const header = document.getElementById('header');
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 50) {
+                    header.classList.add('py-2');
+                    header.classList.remove('py-4');
+                } else {
+                    header.classList.add('py-4');
+                    header.classList.remove('py-2');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
